@@ -1,0 +1,80 @@
+
+
+Dart adalah bahasa pemrograman yang dikembangkan oleh Google. Dart dirancang untuk pengembangan aplikasi yang cepat di berbagai platform, termasuk web, server, dan mobile. 
+Dart memiliki sintaks yang mirip dengan bahasa pemrograman seperti JavaScript dan Java, sehingga mudah dipelajari bagi pengembang yang sudah familiar dengan bahasa-bahasa tersebut.
+
+Flutter adalah framework UI yang juga dikembangkan oleh Google, yang memungkinkan pengembang untuk membuat aplikasi natively compiled untuk mobile, web, dan desktop dari satu basis kode.
+Flutter menggunakan Dart sebagai bahasa pemrogramannya. Salah satu keunggulan Flutter adalah kemampuannya untuk menghasilkan antarmuka pengguna yang indah dan responsif dengan performa tinggi.
+
+Contoh Widget di Flutter
+1. Text
+Widget ini digunakan untuk menampilkan teks di layar.
+Dart
+
+Text('Hello, Flutter!')
+AI-generated code. Review and use carefully. More info on FAQ.
+Container
+Widget ini digunakan untuk mengatur tata letak, ukuran, padding, dan margin dari widget anak.
+Dart
+
+2. Container(
+  padding: EdgeInsets.all(16.0),
+  margin: EdgeInsets.all(8.0),
+  color: Colors.blue,
+  child: Text('Hello, Container!'),
+)
+AI-generated code. Review and use carefully. More info on FAQ.
+
+3. Row dan Column
+Widget ini digunakan untuk mengatur tata letak widget anak dalam baris atau kolom.
+Dart
+
+Row(
+  children: <Widget>[
+    Icon(Icons.star),
+    Icon(Icons.star),
+    Icon(Icons.star),
+  ],
+)
+
+Column(
+  children: <Widget>[
+    Text('First Line'),
+    Text('Second Line'),
+    Text('Third Line'),
+  ],
+)
+AI-generated code. Review and use carefully. More info on FAQ.
+Scaffold
+Widget ini menyediakan struktur dasar untuk aplikasi, seperti AppBar, Drawer, dan BottomNavigationBar.
+Dart
+
+4. Scaffold(
+  appBar: AppBar(
+    title: Text('My Flutter App'),
+  ),
+  body: Center(
+    child: Text('Hello, Scaffold!'),
+  ),
+)
+AI-generated code. Review and use carefully. More info on FAQ.
+ListView
+Widget ini digunakan untuk membuat daftar yang dapat digulir.
+Dart
+
+5. ListView(
+  children: <Widget>[
+    ListTile(
+      leading: Icon(Icons.map),
+      title: Text('Map'),
+    ),
+    ListTile(
+      leading: Icon(Icons.photo_album),
+      title: Text('Album'),
+    ),
+    ListTile(
+      leading: Icon(Icons.phone),
+      title: Text('Phone'),
+    ),
+  ],
+)
