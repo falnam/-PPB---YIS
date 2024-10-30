@@ -7,7 +7,7 @@ class MyPage extends StatelessWidget {
 
   final List<Product> products = [
     Product(
-      id: '1',
+      id: 1,
       nama: 'Mouse',
       harga: 300000,
       gambarUrl:
@@ -15,7 +15,7 @@ class MyPage extends StatelessWidget {
       deskripsi: 'Mouse Gaming kualitas terbaik',
     ),
     Product(
-      id: '2',
+      id: 2,
       nama: 'Mechanical Keyboard',
       harga: 500000,
       gambarUrl:
@@ -23,7 +23,7 @@ class MyPage extends StatelessWidget {
       deskripsi: 'Keyboard Gaming kualitas terbaik',
     ),
     Product(
-      id: '3',
+      id: 3,
       nama: 'Headphone Gaming',
       harga: 500000,
       gambarUrl:
@@ -36,7 +36,7 @@ class MyPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Jenis Barang'),
+        title: const Text('Class Models'),
         centerTitle: true,
         backgroundColor: Colors.blueAccent[400],
       ),
@@ -63,7 +63,9 @@ class MyPage extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (_) => DetailPage(),
+                  builder: (_) => DetailPage(
+                    data: Icon(Icons.notification_add_outlined),
+                  ),
                 ),
               );
             },
