@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
 class DetailPage extends StatelessWidget {
-  const DetailPage({super.key});
+  const DetailPage({super.key, required this.data});
+
+  final Widget data;
 
   @override
   Widget build(BuildContext context) {
@@ -11,11 +13,8 @@ class DetailPage extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.blueAccent[400],
       ),
-      body: const Center(
-        child: Text(
-          'Ini adalah Detail Page',
-          style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
-        ),
+      body: Center(
+        child: data, // Menampilkan widget data secara langsung
       ),
     );
   }
