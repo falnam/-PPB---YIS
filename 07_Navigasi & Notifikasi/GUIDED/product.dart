@@ -1,5 +1,5 @@
 class Product {
-  final String id;
+  final int id;
   final String nama;
   final double harga;
   final String gambarUrl;
@@ -11,8 +11,7 @@ class Product {
       required this.nama,
       required this.harga,
       required this.gambarUrl,
-      required this.deskripsi}
-      );
+      required this.deskripsi});
 
   // method untuk mengkonversi kedalam objek dengan nama produk
   factory Product.fromJson(Map<String, dynamic> json) {
@@ -21,8 +20,7 @@ class Product {
         nama: json['nama'],
         harga: json['harga'],
         gambarUrl: json['gambarUrl'],
-        deskripsi: json['deskripsi']
-        );
+        deskripsi: json['deskripsi']);
   }
 
   // method untuk mengkonversi kedalam objek json
